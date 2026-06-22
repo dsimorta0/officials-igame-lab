@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一种选择 · e世博</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(145deg, #fdf1e6 0%, #f7d9c4 100%);
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1.2rem;
+            line-height: 1.6;
+            color: #2c2c2c;
+        }
+
+        .card {
+            max-width: 820px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 40px;
+            padding: 2.8rem 2.6rem;
+            box-shadow: 0 20px 40px -12px rgba(160, 90, 50, 0.25), 0 8px 20px rgba(0, 0, 0, 0.04);
+            transition: box-shadow 0.25s ease;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 2rem 1.5rem;
+                border-radius: 28px;
+            }
+        }
+
+        .opening-line {
+            font-size: 1.15rem;
+            letter-spacing: 0.01em;
+            color: #7c5f4a;
+            font-weight: 400;
+            border-left: 4px solid #dbb594;
+            padding-left: 1.1rem;
+            margin-bottom: 1.6rem;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            font-weight: 510;
+            letter-spacing: -0.01em;
+            color: #3b2a1f;
+            margin-bottom: 0.6rem;
+        }
+
+        .subhead {
+            font-size: 1.1rem;
+            color: #6f5743;
+            margin-bottom: 2.2rem;
+            border-bottom: 1px solid #efded3;
+            padding-bottom: 1.2rem;
+        }
+
+        .story-lead {
+            font-size: 1.05rem;
+            margin-bottom: 1.4rem;
+            color: #3d322b;
+        }
+
+        .story-lead a {
+            color: #b27953;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.08rem 0.2rem;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .story-lead a:hover {
+            background: #efe2d6;
+            color: #8f5f3e;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 1.6rem;
+            margin: 2rem 0 2.2rem;
+            background: #faf6f1;
+            padding: 1.6rem 1.8rem;
+            border-radius: 28px;
+        }
+
+        .feature-item {
+            flex: 1 1 180px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .feature-icon {
+            font-size: 1.6rem;
+            line-height: 1;
+            margin-bottom: 0.2rem;
+        }
+
+        .feature-title {
+            font-weight: 520;
+            color: #402f23;
+            font-size: 1rem;
+            letter-spacing: 0.02em;
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #5c4c3e;
+            line-height: 1.5;
+        }
+
+        .scenario-note {
+            background: #f3ede7;
+            border-radius: 24px;
+            padding: 1.4rem 1.8rem;
+            margin-bottom: 2rem;
+            font-size: 0.98rem;
+            color: #3d322b;
+        }
+
+        .scenario-note strong {
+            font-weight: 530;
+            color: #4d3829;
+        }
+
+        .faq-snippet {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin: 1.8rem 0 2.2rem;
+            border-top: 1px dashed #dac9bc;
+            padding-top: 1.6rem;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #4e392b;
+            font-size: 1rem;
+        }
+
+        .faq-a {
+            color: #4d4037;
+            font-size: 0.95rem;
+            margin-left: 0.2rem;
+        }
+
+        .closing {
+            font-size: 1rem;
+            color: #4d3d30;
+            border-top: 1px solid #efe2d7;
+            padding-top: 1.6rem;
+            margin-top: 1.2rem;
+            text-align: left;
+        }
+
+        .closing a {
+            color: #b27953;
+            text-decoration: none;
+            font-weight: 490;
+            border-bottom: 1px dotted #dbb594;
+            transition: border 0.2s;
+        }
+
+        .closing a:hover {
+            border-bottom: 1px solid #8f5f3e;
+            color: #7f5539;
+        }
+
+        .footnote {
+            margin-top: 2.2rem;
+            font-size: 0.85rem;
+            color: #897a6d;
+            text-align: center;
+            letter-spacing: 0.02em;
+        }
+
+        .footnote span {
+            display: inline-block;
+            border-top: 1px solid #e0d3c7;
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="opening-line">有时只是一个直觉，便走向一条未曾预料的路径。</div>
+
+        <h1>选择本身，就是叙事</h1>
+        <div class="subhead">关于某种节奏，以及微妙的平衡感</div>
+
+        <p class="story-lead">
+            一个平台之所以被记住，往往不在于它宣称什么，而在于它如何融入日常的缝隙。<a href="https://cn-esball.com">e世博</a>不是那种大声宣告的存在——它更像一个安静的场景，在浏览与参与之间，提供一种不过分打扰的连贯感。从页面加载的响应速度，到分类的直觉式布局，细节堆叠成一种习惯。
+        </p>
+
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-icon">✦</div>
+                <div class="feature-title">界面节奏</div>
+                <div class="feature-desc">导航清晰，色调温和，不制造多余眩光。</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">◈</div>
+                <div class="feature-title">内容归类</div>
+                <div class="feature-desc">模块化呈现，让寻找与发现变得自然。</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">▣</div>
+                <div class="feature-title">响应适配</div>
+                <div class="feature-desc">在手机与桌面之间保持一致的阅读流。</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">○</div>
+                <div class="feature-title">低介入感</div>
+                <div class="feature-desc">没有弹窗追赶，信息安静地等着被浏览。</div>
+            </div>
+        </div>
+
+        <div class="scenario-note">
+            <strong>一个常见的场景：</strong>深夜浏览，屏幕微光，手指滑动间不需要思考“下一步点哪里”。布局里的留白与字体层级帮你划分注意力——这正是设计里那种“不出声的引导”。<a href="https://cn-esball.com" style="color:#b27953;text-decoration:none;font-weight:480;">e世博</a>在这方面做了许多减法，让体验回归浏览本身。
+        </div>
+
+        <div class="faq-snippet">
+            <div class="faq-q">▸ 它适合哪些人？</div>
+            <div class="faq-a">对界面干净度有要求、不喜欢被过度推销的用户。不追求花哨，但期待稳定与清晰。</div>
+            <div class="faq-q" style="margin-top:0.6rem;">▸ 与其他平台最大的不同？</div>
+            <div class="faq-a">克制。不去抢占注意力，而是提供一种可停留的空间感。很多细节在第二、第三次使用中才会浮现。</div>
+        </div>
+
+        <div class="closing">
+            一个平台能否成为日常，往往取决于它是否懂得后退半步。不扰人，不寡淡——这是<a href="https://cn-esball.com">e世博</a>留给人的印象。如果你也在寻找那种不费力的浏览节奏，也许可以把它加入书签，在某个安静的时刻打开看看。
+        </div>
+
+        <div class="footnote">
+            <span>—— 只是叙述，并非推荐 ——</span>
+        </div>
+    </div>
+</body>
+</html>
